@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 
 describe("Animal Money Token contract", function() {
-  it("Deployment should assign the total supply of tokens to the owner", async function() {
+  it("Deployment should succeed", async function() {
     const [owner] = await ethers.getSigners();
 
     const AnimalMoneyToken = await ethers.getContractFactory("AnimalMoneyToken");
