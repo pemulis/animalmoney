@@ -12,7 +12,7 @@ async function main() {
   const AnimalMoneyNFTContract = await ethers.getContractFactory("AnimalMoneyNFT");
   const nftContract = await AnimalMoneyNFTContract.deploy();
 
-  console.log("Animal Money NFT contract address:", token.address);
+  console.log("Animal Money NFT contract address:", nftContract.address);
 }
 
 main()
