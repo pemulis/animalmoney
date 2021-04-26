@@ -10,6 +10,7 @@ async function main() {
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
   const AnimalMoneyNFTContract = await ethers.getContractFactory("AnimalMoneyNFT");
+  console.log(AnimalMoneyNFTContract);
   const nftContract = await AnimalMoneyNFTContract.deploy();
 
   console.log("Animal Money NFT contract address:", nftContract.address);
